@@ -1,0 +1,23 @@
+# STM32F4DISCOVERY board configuration
+
+# Copyright (c) 2016 Linaro Limited.
+# SPDX-License-Identifier: Apache-2.0
+
+if BOARD_SEAMORE_F407ZET6
+
+config BOARD
+	default "seamore_f407zet6"
+
+if NETWORKING
+
+config NET_L2_ETHERNET
+	default y
+
+endif # NETWORKING
+
+endif # BOARD_SEAMORE_F407ZET6
+
+CONFIG_PINCTRL=y
+
+
+CONFIG_CAN_STM32FD_CLOCK_SOURCE_PCLK1=y

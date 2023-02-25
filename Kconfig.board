@@ -1,0 +1,7 @@
+
+# Copyright (c) 2016 Linaro Limited.
+# SPDX-License-Identifier: Apache-2.0
+
+config BOARD_SEAMORE_F407ZET6
+	bool "STM32F4DISCOVERY Development Board"
+	depends on SOC_STM32F407XG
